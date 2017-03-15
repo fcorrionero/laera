@@ -76,6 +76,11 @@ sonata_block:
         sonata.admin.block.admin_list:
             contexts: [admin]
 
+sonata_admin:
+    title:      Administración
+    templates:
+        layout: admin/dashboard_layout.twig
+
 fos_user:
     db_driver: orm # other valid values are 'mongodb' and 'couchdb'
     firewall_name: main

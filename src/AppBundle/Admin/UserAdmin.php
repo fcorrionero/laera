@@ -18,8 +18,8 @@ class UserAdmin extends AbstractAdmin
             ->with('Configuración')
                 ->add('roles', 'choice', array(
                     'choices' => array(
-                        'ROLE_ADMIN' => 'Admin',
-                        'ROLE_USER' => 'User'
+                        'Admin' => 'ROLE_ADMIN',
+                        'User' => 'ROLE_USER'
                     ),
                     'expanded' => false,
                     'multiple' => true,

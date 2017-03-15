@@ -1,3 +1,7 @@
 #admin_area:
 #        resource: "@SonataAdminBundle/Resources/config/routing/sonata_admin.xml"
 #        prefix: /admin
+
+default_index:
+    path: /
+    defaults: { _controller: "AppBundle:Default:index"}
