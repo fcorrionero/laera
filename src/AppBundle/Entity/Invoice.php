@@ -1,4 +1,6 @@
 <?php
+// src/AppBundle/Entity/Invoice.php
+
 // FACTURAS
 namespace AppBundle\Entity;
 
@@ -7,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
 use AppBundle\Entity\User as User;
 
 /**
- * ORM\Entity
+ * @ORM\Entity
  * @ORM\Table(name="facturas")
  */
 class Invoice{
@@ -64,7 +66,7 @@ class Invoice{
     private $ejercicio;
 
     /**
-     * @ORM\Column(type="string)
+     * @ORM\Column(type="string")
      * @ORM\Column(length=20)
      * @ORM\Column(nullable=true)
      */
@@ -190,14 +192,14 @@ class Invoice{
     private $user;
 
     /**
-     * @ORM\Column(type="string)
+     * @ORM\Column(type="string")
      * @ORM\Column(length=20)
      * @ORM\Column(nullable=true)
      */
     private $nif_titular;
 
     /**
-     * @ORM\Column(type="string)
+     * @ORM\Column(type="string")
      * @ORM\Column(length=250)
      * @ORM\Column(nullable=true)
      */
